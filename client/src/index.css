@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+@import "tw-animate-css";
+
+:root {
+  font-family: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  color: #172033;
+  background: #f7f8fb;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  --radius: 0.75rem;
+  --background: #f7f8fb;
+  --foreground: #172033;
+  --card: #ffffff;
+  --card-foreground: #172033;
+  --popover: #ffffff;
+  --popover-foreground: #172033;
+  --primary: #172033;
+  --primary-foreground: #ffffff;
+  --secondary: #eef1f7;
+  --secondary-foreground: #364158;
+  --muted: #f3f5f8;
+  --muted-foreground: #7f8798;
+  --accent: #eef1f7;
+  --accent-foreground: #172033;
+  --destructive: #b64747;
+  --border: #e3e7ef;
+  --input: #e3e7ef;
+  --ring: #8b9ab3;
+}
+
+* { border-color: var(--border); }
+html { background: var(--background); }
+body { margin: 0; min-width: 320px; min-height: 100vh; background: var(--background); }
+button, a, textarea { transition: color 180ms ease, background-color 180ms ease, border-color 180ms ease, transform 160ms ease, box-shadow 180ms ease; }
+button:active { transform: scale(0.98); }
+button:focus-visible, a:focus-visible, textarea:focus-visible { outline: 3px solid rgba(92, 111, 145, .28); outline-offset: 2px; }
+::selection { background: #dce5f3; color: #172033; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+}

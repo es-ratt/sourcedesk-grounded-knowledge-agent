@@ -1,0 +1,24 @@
+# Project TODO
+
+- [x] Add the curated server-side knowledge file as the live query-time data connection
+- [x] Implement keyword retrieval over knowledge-file passages
+- [x] Implement hybrid retrieval using normalized keywords, phrase matches, and a synonym map
+- [x] Implement grounded LLM answer generation using only retrieved passages
+- [x] Require inline citations that point to exact source excerpts
+- [x] Add the polished chat interface for questions and answers
+- [x] Add the conversation history panel with questions, answers, and cited passages
+- [x] Add the build log page documenting iterations, breakages, changes, and cuts
+- [x] Add server tests for retrieval and grounding/citation behavior
+- [x] Run type checks and tests
+- [x] Verify desktop and mobile UI screenshots
+- [x] Prepare the FL-07 raw-run capture script and submission notes
+- [x] Save the final project checkpoint
+- [x] Add citation validation so returned answers can only cite retrieved passage IDs
+- [x] Expand session history entries to include answer text and cited excerpts
+- [x] Add server tests for the knowledge ask contract and citation validation
+- [x] Capture mobile screenshots for both required pages
+- [x] Rename the semantic retrieval item to accurately describe the implemented hybrid heuristic
+- [x] Show the actual cited excerpt text inside each session-history item
+- [x] Add direct knowledge.ask procedure tests for no-results and grounded-answer behavior
+- [x] Add a direct knowledge.ask success-path test with a valid cited model response
+- [x] Add a direct knowledge.ask invalid-citation fallback test
